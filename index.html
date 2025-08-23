@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rocket</title>
+  <link rel="icon" type="image/svg+xml" href="img/rocket-lunch.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__menu">
+      <div class="header__logo">
+        <a class="header__logo-link" href="index.html">
+          <img class="header__logo-image" src="img/rocket-lunch.svg" alt="rocket-logo">
+          <h1 class="header__title">Rocket Movies</h1>
+        </a>
+      </div>
+      <nav class="header__navbar">
+        <ul class="header__navbar-list">
+          <li class="header__navbar-item"><a class="header__navbar-link" href="#">Home</a></li>
+          <li class="header__navbar-item"><a class="header__navbar-link" href="#">Movies</a></li>
+          <li class="header__navbar-item"><a class="header__navbar-link" href="#">Serials</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="search-section">
+      <h2 class="search-section__title">Find Your Movie</h2>
+      <p class="search__description">The biggest movie database, right at your fingertips</p>
+
+      <div class="search__container">
+        <div class="search__group search__group--input">
+          <label class="search__label-input" for="search">Search films</label>
+          <input class="search__input" type="text" id="search" placeholder="Find a movie...">
+        </div>
+
+        <div class="search__group search__group--checkbox">
+          <label class="search__label-checkbox" for="checkbox">Add to list </label>
+          <input class="search__input" type="checkbox" id="checkbox">
+        </div>
+      </div>
+    </section>
+
+    <section class="search-result-section">
+      <h2 class="search-result-section__title">Rocket found...</h2>
+      <div class="movies" id="movies-list"></div>
+    </section>
+
+    <section class="novelty-section">
+      <h2 class="novelty-section__title">The newest movies of 2025</h2>
+      <div class="new-movies" id="new-movies-list"></div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="footer__logo">
+      <a href="index.html">
+        <img class="footer__logo-image" src="img/rocket-lunch.svg" alt="rocket-logo">
+        <h4 class="footer__logo-title">Rocket Movies</h4>
+      </a>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
+
+</html>
