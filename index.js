@@ -1,0 +1,1 @@
+https://api.themoviedb.org/3/movie/popular?api_key=ВАШ_КЛЮЧ_TMDb
