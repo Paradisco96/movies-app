@@ -58,7 +58,7 @@ const inputSearchHandler = (e) => {
     searchInput.value = '';
 
     lastSearchValue = searchValue;
-  }, 500);
+  }, 300);
 };
 
 searchInput.addEventListener('input', inputSearchHandler);
