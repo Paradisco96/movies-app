@@ -42,14 +42,14 @@ const addMoviesToList = ({ Poster: poster, Title: title, Year: year }) => {
 };
 
 const clearMoviesMarkup = () => {
-  if (moviesListElement) moviesListElement.innerHtml = '';
+  if (moviesListElement) moviesListElement.innerHTML = '';
 };
 
 const inputSearchHandler = (e) => {
   debounceTimeout(() => {
     const searchValue = e.target.value.trim();
     if (!searchValue || searchValue.length < 4 || searchValue === lastSearchValue) return;
-    if (!isSearchTriggerEnabled) clearMoviesMarkup();
+    if (isSearchTriggerEnabled) clearMoviesMarkup();
 
     getData(`https://www.omdbapi.com/?i=tt3896198&apikey=91c4f162&s=${searchValue}`)
       .then((data) => data.forEach(addMoviesToList))
@@ -58,7 +58,7 @@ const inputSearchHandler = (e) => {
     searchInput.value = '';
 
     lastSearchValue = searchValue;
-  }, 300);
+  }, 700);
 };
 
 searchInput.addEventListener('input', inputSearchHandler);
