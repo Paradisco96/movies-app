@@ -1,0 +1,33 @@
+@use "../../abstracts" as *;
+
+.footer {
+  padding: $gap $gap-lg;
+
+  color: $color-black;
+  background: $color-accent-pink;
+  background: linear-gradient(90deg, $color-accent-pink 0%, $color-accent-purple 100%);
+
+  @include md-sm {
+    align-items: center;
+    flex-direction: column;
+
+    padding: $gap-sm;
+  }
+
+
+  &__logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: $gap;
+  }
+
+  &__logo-image {
+    max-width: 38px;
+  }
+
+  &__logo-title {
+    font-size: $font-size;
+  }
+}

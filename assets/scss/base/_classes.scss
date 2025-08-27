@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+
+.container {
+  width: min(100% - $gap-x2, $container-size);
+
+  margin-inline: auto;
+}
+
+
+.main {
+  min-height: 100vh;
+}
+
+.section {
+  margin: $gap-x4 0 $gap-x4;
+
+  @include md-sm {
+    margin: $gap-x3 0 $gap-x3;
+  }
+  @include sm {
+    margin: $gap-x2 0 $gap-x2;
+  }
+}

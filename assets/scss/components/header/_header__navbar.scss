@@ -1,14 +1,18 @@
 @use "../../abstracts" as *;
 
-.header__navbar{
-&-list {
+.header__navbar {
+  &-list {
     display: flex;
     align-items: center;
+    flex-wrap: no-wrap;
+
     gap: $gap-lg;
-    flex-wrap: wrap;
+    @include sm {
+      padding: 0;
+    }
   }
 
- &-link {
+  &-link {
     font-weight: 600;
   }
 }

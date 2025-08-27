@@ -1,0 +1,34 @@
+@use "../../abstracts" as *;
+
+.header__logo {
+  &-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: $gap;
+  }
+
+  &-image {
+    max-width: 44px;
+
+    @include md-sm {
+      max-width: 38px;
+    }
+    @include sm {
+      max-width: 20px;
+    }
+  }
+}
+.header__title {
+  padding-top: $gap-sm;
+
+  font-size: 22px;
+
+  @include md-sm {
+    font-size: 18px;
+  }
+  @include sm {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,30 @@
+@use "../abstracts" as *;
+
+* {
+  box-sizing: border-box;
+  // margin: 0;
+  // padding: 0;
+
+  list-style: none;
+}
+
+body {
+  letter-spacing: 0.05em;
+
+  color: $color-text;
+  background-color: $color-primary;
+
+  font-family: $font-main;
+}
+
+a {
+  text-decoration: none;
+
+  color: inherit;
+}
+
+h1,
+h2,
+h4 {
+  font-weight: 700;
+}

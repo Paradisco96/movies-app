@@ -1,0 +1,21 @@
+@use "../../abstracts" as *;
+
+.header {
+  padding: $gap $gap-x4;
+
+  color: $color-black;
+  background: $color-accent-purple;
+  background: linear-gradient(90deg, $color-accent-pink 0%, $color-accent-purple 100%);
+
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include sm {
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}
