@@ -1,0 +1,14 @@
+@use "../../abstracts" as *;
+
+.header__navbar{
+&-list {
+    display: flex;
+    align-items: center;
+    gap: $gap-lg;
+    flex-wrap: wrap;
+  }
+
+ &-link {
+    font-weight: 600;
+  }
+}

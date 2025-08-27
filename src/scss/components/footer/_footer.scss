@@ -1,0 +1,22 @@
+.footer {
+    background: $color-accent-pink;
+    background: linear-gradient(90deg, $color-accent-pink 0%, $color-accent-purple 100%);
+    color: $color-black;
+    padding: $gap $gap-lg;
+ 
+
+  &__logo-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $gap;
+  
+  &-image {
+    max-width: 38px;
+  }
+}
+
+ &__logo-title {
+    font-size: $font-size;
+  }
+   }

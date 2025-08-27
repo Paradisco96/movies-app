@@ -1,0 +1,11 @@
+@use "../abstracts" as *;
+
+.container {
+  width: min(100% - $gap-x2, $container-size);
+  margin-inline: auto;
+}
+
+
+.main {
+    min-height: 100vh;
+  }
